@@ -1,0 +1,153 @@
+.newTaskContainer {
+  width: 100%;
+  max-width: 736px;
+  margin-top: -1.75rem;
+}
+
+.inputWrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputWrapper input {
+  flex: 1;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+}
+
+.inputWrapper button {
+  color: var(--white);
+  background: var(--blue-dark);
+  font-size: 0.875rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputWrapper button:hover {
+  filter: brightness(0.9);
+}
+
+.tasksInfo {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksInfo > strong:first-child {
+  color: var(--blue); 
+  font-size: 0.875rem;
+ }
+
+.tasksInfo > strong {
+ color: var(--purple); 
+ font-size: 0.875rem;
+}
+
+.tasksInfo span {
+  margin-left: 0.5rem;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+
+  background: var(--gray-400);
+  padding: 0.225rem 0.5rem;
+  border-radius: 999px;
+}
+
+.taskList {
+  width: 100%;
+  
+  
+}
+
+.tasksEmpty {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  padding: 4rem 0;
+}
+
+.tasksEmpty img {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+}
+
+.tasksEmpty strong {
+  margin: 2rem 0 0.5rem;
+}
+
+
+.completedTask {
+  background: var(--gray-400);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+
+  display: flex;
+}
+
+.completedTask p {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.createdTask {
+  background: var(--gray-400);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+
+  display: flex;
+}
+
+.createdTask p {
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+.taskCreatedCheckButton {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  background: transparent;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 0.875rem;
+
+  margin-right: 1rem;
+}
+
+.checkButton {
+  background: none;
+  border: 0;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.trash {
+  background: transparent;
+  border: 0;
+  margin-left: auto;
+}
+
